@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Salvi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Background Dynamic Glow Elements -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <nav>
+        <div class="logo"><i class="fa-solid fa-bug text-cyan"></i> Neha<span>.Salvi</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="home-content">
+            <span class="badge"><i class="fa-solid fa-rocket"></i> Final Year IT Student</span>
+            <h1>Hello, I'm <span class="gradient-text">Neha Salvi</span></h1>
+            <p class="subtitle">QA Engineer & Full-Stack Web Developer passionate about building robust, scalable software solutions.</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+                <a href="https://qa-bug-tracker-zwb3.onrender.com" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Bug Tracker App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="img-wrapper">
+                <img src="profile.png" alt="Neha Salvi" onerror="this.src='https://ui-avatars.com/api/?name=Neha+Salvi&background=0284c7&color=fff&size=200'">
+            </div>
+            <div class="about-text">
+                <p>Hello! I am <strong>Neha Salvi</strong>, an enthusiastic Information Technology student dedicated to software engineering and quality assurance.</p>
+                <p>Working under the academic guidance of <strong>Prof. Steffy Felicia Wesley</strong>, I focus on full-stack development, database architecture, automated QA testing workflows, and project lifecycle management.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Dedicated Focus</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Web App</h3>
+                        <p>QA Tracker Project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="card-tag">Core Project</div>
+                <h3>QA Bug Tracker System</h3>
+                <p>A comprehensive web platform that enables software development teams to report, manage, assign, and track bug lifecycle statuses seamlessly with live metrics dashboarding.</p>
+                <div class="tech-stack">
+                    <span>Python Flask</span>
+                    <span>HTML5/CSS3</span>
+                    <span>SQLAlchemy</span>
+                    <span>Render Deployment</span>
+                </div>
+                <a href="https://qa-bug-tracker-zwb3.onrender.com" target="_blank" class="btn btn-secondary card-btn"><i class="fa-solid fa-globe"></i> Launch Application</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i> Python (Flask)</div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i> SQL / PostgreSQL</div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+            <div class="skill-card"><i class="fa-solid fa-vial-circle-check"></i> Software QA & Testing</div>
+            <div class="skill-card"><i class="fa-solid fa-cloud-arrow-up"></i> Render Cloud Hosting</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <form onsubmit="event.preventDefault(); alert('Message submitted successfully!');">
+            <div class="input-group">
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+            </div>
+            <textarea rows="5" placeholder="Your Message Here..." required></textarea>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Neha Salvi. All rights reserved. | Project Guided by <strong>Steffy Felicia Wesley</strong></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
